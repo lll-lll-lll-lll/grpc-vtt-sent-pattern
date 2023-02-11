@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package sent_vtt;
+option go_package = "pkg/grpc";
+
+
+
+service VTTSentPatternService {
+    // テスト用メソッド
+    rpc Hello (HelloRequest) returns (HelloResponse);
+    // req.textから文型を取得
+    rpc GetPattern (GetPatternRequest) returns (GetPatternResponse);
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloResponse {
+    string message = 1;
+}
+
+message GetPatternRequest {
+    string text = 1;
+}
+
+message GetPatternResponse {
+    string text = 1;
+}
