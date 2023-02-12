@@ -9,3 +9,8 @@
 ### 設計
 - 構文解析 -> サーバ側
 - vtt字幕ファイル整形 -> クライアント側
+
+
+
+# Ref 
+- https://dev.to/techschoolguru/upload-file-in-chunks-with-client-streaming-grpc-golang-4loc
